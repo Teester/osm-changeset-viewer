@@ -145,7 +145,7 @@
 					var lat = ((changesets[i].getAttribute('min_lat') * 1) + (changesets[i].getAttribute('max_lat') * 1))/2;
 					var lon = ((changesets[i].getAttribute('min_lon') * 1) + (changesets[i].getAttribute('max_lon') * 1))/2;
 
-					txt += "<tr class='toplevel' id ='" + changesets[i].getAttribute('id') + "'><td><a href=http://www.openstreetmap.org/changeset/" + changesets[i].getAttribute('id') + ">" + changesets[i].getAttribute('id') + "</a></td>";
+					txt += "<tr class='toplevel' id ='" + changesets[i].getAttribute('id') + "'><td><a href=https://www.openstreetmap.org/changeset/" + changesets[i].getAttribute('id') + ">" + changesets[i].getAttribute('id') + "</a></td>";
 					var dt = new Date(changesets[i].getAttribute('created_at'));
 					txt += "<td>" + dt.toLocaleDateString() + " " + dt.toLocaleTimeString() + "</td>";
 					var tags = changesets[i].getElementsByTagName("tag");
@@ -176,14 +176,14 @@
 					if (source) { txt += source + " "; source = "";}
 					if (imagery) { txt += imagery + " "; imagery = "";}
 					txt += "</td>";
-					txt += "<td class='user'><a href=http://www.openstreetmap.org/user/" + changesets[i].getAttribute('user') + ">" + changesets[i].getAttribute('user') + "</a></td>";
+					txt += "<td class='user'><a href='https://www.openstreetmap.org/user/" + changesets[i].getAttribute('user') + "'>" + changesets[i].getAttribute('user') + "</a></td>";
 					txt += "<td>" + changesets[i].getAttribute('comments_count') + "</td>";
 					txt += "</tr>";
 					
 					var latLng = new L.latLng([lat, lon]);
 					var myMarker = new L.marker(latLng);           
 					
-					myMarker.bindPopup("Changeset " + changesets[i].getAttribute('id') + "<br/>" + comment);
+					myMarker.bindPopup("<a href='https://www.openstreetmap.org/changeset/" + changesets[i].getAttribute('id') + "'>Changeset " + changesets[i].getAttribute('id') + "</a><br/>" + comment);
 					marker.push(myMarker);
 					mymap.addLayer(marker[k]);
 					k++;
