@@ -1,0 +1,102 @@
+body {
+	font-family: ubuntu;
+	padding: 0px;
+	margin: 0px;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	background-color: #f2f2f2;
+}
+
+td, th {
+	border-top: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	padding: 8px;
+}
+
+tr:hover, .selected {
+	background-color: #ddd;
+}
+
+.toplevel {
+	border: 0px;
+}
+
+.title {
+}
+
+.comment tr {
+	background-color: #e2e2e2;
+	border: 0px;
+}
+
+.subcomment {
+	background-color: #f2f2f2;
+	padding-left: 50px;
+	font-size: 14px;
+}
+
+.user {
+	font-size: 15px;
+}
+
+th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #4CAF50;
+	color: white;
+}
+
+#checkboxcontainer {
+	padding: 10px;
+	display: inline-block;
+	color: #ffffff;
+}
+
+#titlecontainer {
+	padding: 10px;
+	display: inline-block;
+	font-size: 150%;
+	color: #ffffff;
+}
+
+.headercontainer {
+	display: flex;
+	justify-content: space-between;
+	background-color: #4CAF50;
+	padding: 20px;
+}
+
+#notescontainer {
+	display: block;
+}
+
+.changesetCommentsCount {
+	text-align: center;
+}
+
+.changesetImagery {
+	font-size: 10px;
+}
+
+.changesetChanges {
+	font-size: 10px;
+}
+
+.changesetCount {
+	font-size: 10px;
+}
+
+.changesetTime {
+	font-size: 12px;
+}
+
+#mapid {
+	height:400px;
+	width: 100%;
+	display: block;
+}
