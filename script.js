@@ -14,8 +14,8 @@ function start() {
 }
 
 function checkBox() {
-	var checkBox = document.getElementById("myCheck");
-	if (checkBox.checked == true){
+	var reviewCheckBox = document.getElementById("myCheck");
+	if (reviewCheckBox.checked == true){
 		reviewChecked = true;
 	} else {
 		reviewChecked = false;
