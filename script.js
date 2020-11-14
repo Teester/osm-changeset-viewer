@@ -268,7 +268,6 @@ function checkBoxIsWithinBounds(xml, coordinates) {
 		xml.getAttribute('max_lat') * 1 < coordinates.getNorth(),
 		xml.getAttribute('max_lon') * 1 < coordinates.getEast()) {
 		return true;
-	} else {
-		return false;
 	}
+	return false;
 }
