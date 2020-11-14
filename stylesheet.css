@@ -1,5 +1,5 @@
 body {
-	font-family: ubuntu;
+	font-family: ubuntu, sans-serif;
 	padding: 0px;
 	margin: 0px;
 }
@@ -23,9 +23,6 @@ tr:hover, .selected {
 
 .toplevel {
 	border: 0px;
-}
-
-.title {
 }
 
 .comment tr {
