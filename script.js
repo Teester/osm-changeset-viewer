@@ -262,11 +262,11 @@ function getCentreOfBox(xml) {
  * to filter out all the annoying worldwide changesets with no actual changes in the
  * desired area.
  **/
-function checkBoxIsWithinBounds(xml, bounds) {
-	if (xml.getAttribute('min_lat') * 1 > bounds.getSouth(),
-		xml.getAttribute('min_lon') * 1 > bounds.getWest(),
-		xml.getAttribute('max_lat') * 1 < bounds.getNorth(),
-		xml.getAttribute('max_lon') * 1 < bounds.getEast()) {
+function checkBoxIsWithinBounds(xml, coordinates) {
+	if (xml.getAttribute('min_lat') * 1 > coordinates.getSouth(),
+		xml.getAttribute('min_lon') * 1 > coordinates.getWest(),
+		xml.getAttribute('max_lat') * 1 < coordinates.getNorth(),
+		xml.getAttribute('max_lon') * 1 < coordinates.getEast()) {
 		return true;
 	} else {
 		return false;
